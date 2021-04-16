@@ -1,4 +1,125 @@
 .container {
-    height: 50vh;
+    height: 80vh;
     background: rgb(6, 6, 46);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    justify-content: space-around;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 10px;
+    left: 20px;
+    z-index: -1;
+    background: url('../../public/paper-plane.png') no-repeat center center/cover;
+}
+
+.title {
+    padding: 1rem 2rem;
+    background: royalblue;
+    border-radius: 3rem;
+    text-align: center;
+    box-shadow: 1px 5px 15px royalblue;
+}
+
+.bottom {
+    color: gray;
+    font-weight: 200;
+    text-align: center;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list li {
+    width: 5.3rem;
+    height: 5.3rem;
+    margin: 0 1rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.link {
+    font-size: 4rem;
+}
+
+.list li:nth-child(1) {
+    background: rgb(13, 177, 41);
+    transition: all 250ms linear;
+}
+
+.list li:nth-child(1):hover {
+    box-shadow: 1px 5px 15px rgb(13, 177, 41);
+    transform: scale(1.1) translateY(-10px);
+}
+
+.list li:nth-child(2) {
+    background: rgb(194, 28, 28);
+    transition: all 250ms linear;
+}
+
+.list li:nth-child(2):hover {
+    box-shadow: 1px 5px 15px rgb(194, 28, 28);
+    transform: scale(1.1) translateY(-10px);
+}
+
+.list li:nth-child(3) {
+    background: royalblue;
+    transition: all 250ms linear;
+}
+
+.list li:nth-child(3):hover {
+    box-shadow: 1px 5px 15px royalblue;
+    transform: scale(1.1) translateY(-10px);
+}
+
+.list li:nth-child(4) {
+    background: rgb(230, 224, 224);
+    transition: all 250ms linear;
+}
+
+.list li:nth-child(4):hover {
+    box-shadow: 1px 5px 15px rgb(230, 224, 224);
+    transform: scale(1.1) translateY(-10px);
+}
+
+.whatsapp {
+    color: white;
+}
+
+.gmail {
+    color: lightgray;
+}
+
+.linkedin {
+    color: white;
+}
+
+.github {
+    color: black;
+}
+
+@media (max-width: 1000px) {
+    .container::before {
+        opacity: 0.4;
+        top: 30%;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 550px) {
+    .list li{
+        margin: 1rem;
+    }
 }

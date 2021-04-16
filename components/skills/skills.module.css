@@ -36,7 +36,9 @@
 .back_container, .front_container {
     background: rgba(20, 20, 20, 0.699);
     max-width: 45%;
-    border-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 1px solid cyan;
 }
 
 .title {
