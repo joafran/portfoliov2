@@ -1,0 +1,140 @@
+.card {
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_slider {
+    font-family: inherit;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 3rem;
+    border: none;
+    font-size: 1.5rem;
+    background: rgb(5, 26, 92);
+    color: cyan;
+    font-weight: bolder;
+    cursor: pointer;
+    margin: 0 2rem;
+    transition: all 250ms linear;
+}
+
+.btn_slider:hover {
+    color: royalblue;
+    transform: scale(1.1) translateY(-5px);
+}
+
+.project_info {
+    border: 1px solid royalblue;
+    background: rgb(21, 21, 49);
+    height: 600px;
+    width: 800px;
+    border-radius: 2rem;
+}
+
+.project_title {
+    text-align: center;
+    color: crimson;
+}
+
+.project_img {
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+
+.project_links {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.link {
+    margin: 0 1rem;
+    background: royalblue;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.link_disabled {
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.project_links a:hover {
+    color: royalblue;
+    background: white;
+}
+
+.project_info p{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: gray;
+}
+
+@media (max-width: 1000px) {
+    .project_info {
+        width: 600px;
+    }
+}
+
+@media (max-width: 850px) {
+    .project_info {
+        width: 400px;
+        overflow-x: hidden;
+    }
+    .project_img {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 650px) {
+    .btn_slider {
+        margin: 0 .5rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 2rem;
+        font-size: 1.5rem;
+    
+    }
+
+    .project_links {
+        display: flex;
+        flex-direction: column;
+        margin: .5rem 0;
+    }
+
+    .project_info {
+        width: 300px;
+    }
+
+    .project_info::-webkit-scrollbar {
+        display: none;
+    }
+
+    .project_img {
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .project_info {
+        width: 250px;
+    }
+
+    .project_img {
+        width: 250px;
+    }
+
+    .btn_slider {
+        margin: 0 .5rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+    }
+}

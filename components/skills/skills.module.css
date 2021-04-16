@@ -1,0 +1,100 @@
+.container {
+    background: url('../../public/wallpaper02.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills_container {
+    display: flex;
+    padding: 1rem;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+}
+
+.skills_img {
+    width: 70px;
+    height: 70px;
+    transition: transform 250ms linear;
+}
+
+.skills_img:hover {
+    transform: scale(1.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: .5rem;
+    background: rgb(6, 6, 46);
+    color: cyan;
+}
+
+.back_container, .front_container {
+    background: rgba(20, 20, 20, 0.699);
+    max-width: 45%;
+    border-radius: 1rem;
+}
+
+.title {
+    background: rgba(6, 6, 46, 0.548);
+    padding: 1rem;
+    text-align: center;
+    color: crimson;
+    width: 80%;
+    box-shadow: 1px 5px 15px black;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list li {
+    font-size: 5rem;
+    border-radius: 50%;
+    text-align: center;
+    margin: .5rem;
+    padding: .2rem 0;
+    position: relative;
+    transition: transform 250ms linear;
+}
+
+.list li::before {
+    content: attr(title);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: .4rem;
+    background: rgba(20, 20, 20, 0.999);
+    border-radius: 1rem;
+    opacity: 0;
+    font-weight: bolder;
+    font-size: 1rem;
+    transition: opacity 250ms ease, transform 250ms ease;
+}
+
+.list li:hover {
+    transform: scale(1.2);
+}
+
+.list li:hover::before {
+    opacity: 1;
+    transform: translate(-50%, 80%);
+}
+
+@media (max-width: 550px) {
+    .skills_container {
+        flex-direction: column;
+    }
+
+    .front_container, .back_container {
+        max-width: none;
+        margin: 1rem 0;
+    }
+}
