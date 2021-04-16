@@ -123,3 +123,11 @@
         margin: 1rem;
     }
 }
+
+@media (max-width: 350px) {
+    .title {
+        padding: .5rem;
+        border-radius: 3rem;
+        font-size: x-large;
+    }
+}
