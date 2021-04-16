@@ -9,7 +9,7 @@ export default function Layout( { children }: LayoutProps) {
   return (
     <div>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon1.ico" />
         <meta
           name="description"
           content="Joaquin Franco Web Developer Portfolio"
