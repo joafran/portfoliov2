@@ -11,7 +11,7 @@ export default function Home(): JSX.Element {
   useEffect(() => {
     setTimeout(() => {
       setisMounted(true);
-    }, 7000);
+    }, 4500);
   },[isMounted])
   
 

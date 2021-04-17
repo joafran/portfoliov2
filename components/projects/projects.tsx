@@ -9,7 +9,7 @@ export type Project = {
 export const projects = [
     {
         name: 'Quiz App',
-        description: 'A short Quiz of 10 questions of various topics with and API to bring the questions. Made with React and Typescript',
+        description: 'A short Quiz of various topics with and API to bring the questions. Made with React and Typescript.',
         image: '/project01.png',
         repoLink: 'https://github.com/joafran/ts-project-quiz-app',
         webLink: 'https://react-typescriptquiz-app.netlify.app/'
@@ -23,7 +23,7 @@ export const projects = [
     },
     {
         name: 'Todo-List',
-        description: 'A Todo-List made with Vanilla Javascript, HTML and CSS. It works with localStorage to save your Todos and also have some animations.',
+        description: 'A Todo-List made with Vanilla Javascript, HTML and CSS. It works with localStorage.',
         image: '/project03.png',
         repoLink: 'https://github.com/joafran/todo-list',
         webLink: 'https://joafran.github.io/todo-list/'
@@ -38,11 +38,11 @@ export const projects = [
     {
         name: 'Dubsnip',
         description: `An e-commerce made with a team of 6 members during a month.
-        Some features: Login, Sign In, Auth with Google, Purchase, delete or add a product to cart, Admin Panel, etc.
+        Some features: Sign in, Sign up, Auth with Google, Purchase, delete or add a product to cart, Admin Panel, etc.
         This project was made with React-Redux, Node-Express and PostgreSQL`,
         image: '/dubsnip.png',
         repoLink: '',
-        webLink: 'dubsnip.vercel.app'
+        webLink: 'https://dubsnip.vercel.app'
     },
     {
         name: 'integrAR',
